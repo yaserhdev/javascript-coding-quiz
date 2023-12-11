@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Coding Quiz</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
-
 <body>
-    <nav>
-        <p id="scores"><a href="scores.html">High Scores</a></p>
-        <p id="timer">Time: 120</p>
-    </nav>
-    <main id="card">
-        <img src="./assets/images/placeholder.png">
+    <header>
+        <p id="scores"><a href="./scores.html">High Scores</a></p>
+        <p id="timer">Time: 75</p>
+    </header>
+    <main id="start-container">
+        <h1>JavaScript Coding Quiz</h1>
+        <p>Welcome to the JavaScipt coding quiz! 
+           This quiz is designed to test your knowledge on some basic JavaScript topics. 
+           You will have 75 seconds to answer 5 questions as quickly as you can. 
+           Incorrect answers will deduct 10 seconds from the time. 
+           Your final score will be your remaining time. Good luck!</p>
+        <button id="start-quiz">Start Quiz</button>
     </main>
+    <section id="question-container" class="hide">
+        <h1 id="question">Question</h1>
+        <div id="answer-choices">
+            <button id="answer-button">A</button>
+            <button id="answer-button">B</button>
+            <button id="answer-button">C</button>
+            <button id="answer-button">D</button>
+        </div>
+        <h2 id="answer-result"></h2>
+    </section>
+
+    <section id="score-container" class="hide">
+        <form id="score-form">
+            <h3 id="current-score"></h3>
+            <label id="initials">Enter your intials to save your score:</label>
+            <input id="initials-input" type="text" maxlength=3 placeholder="Enter your initials">
+            <button id="submit-button">Submit</button>
+        </form>
+    </section>
     <script src="./assets/js/script.js"></script>
 </body>
-
-
-
-
 </html>
