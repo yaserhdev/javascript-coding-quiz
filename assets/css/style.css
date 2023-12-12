@@ -2,18 +2,32 @@ header {
     display: flex;
 }
 
+* {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
 #scores {
     float: left;
     padding: 5px;
     margin: 0;
 }
 
+#scores:hover {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
 #timer {
     position: absolute;
-    top: 5px;
-    right: 5px;
-    padding: 5px;
-    margin: 0;
+    top: 20px;
+    right: 20px;
+    padding: 20px;
+    margin: 0px;
 }
 
 #start-container {
@@ -22,6 +36,10 @@ header {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+#start-container p {
+    line-height: 1.5;
 }
 
 #question-container {
@@ -40,18 +58,14 @@ header {
     width: 50%;
 }
 
-
-
-/*
-.hide {
-    display: none;
-}
-*/
-.highscores {
-    display: block;
+#highscores-container {
     text-align: center;
     padding-top: 103.5px;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.hide {
+    display: none;
 }
